@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>วันนี้กินอะไรดี? | ITF Lab Week 15</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="bi bi-egg-fried"></i>
+        <span>วันนี้กินอะไรดี?</span>
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#home" class="nav-link">หน้าแรก</a>
+        </li>
+        <li class="nav-item">
+          <a href="#random" class="nav-link">สุ่มอาหาร</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="hero-title">วันนี้กินอะไรดี?</h1>
+        <p class="hero-subtitle">ไม่รู้จะกินอะไรดี? ให้เราช่วยสุ่มเมนูอาหารไทยแสนอร่อยให้คุณ!</p>
+        <a href="#random" class="hero-btn">
+          <i class="bi bi-shuffle"></i>
+          เริ่มสุ่มเลย
+        </a>
+      </div>
+      <div class="hero-decoration">
+        <div class="decoration-circle circle-1"></div>
+        <div class="decoration-circle circle-2"></div>
+        <div class="decoration-circle circle-3"></div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="random-section" id="random">
+      <div class="section-container">
+        <div class="section-header">
+          <h2 class="section-title">เมนูแนะนำสำหรับคุณ</h2>
+          <p class="section-subtitle">กดปุ่มเพื่อสุ่มเมนูใหม่ทุกครั้ง</p>
+        </div>
+
+        <div class="food-card" id="foodCard">
+          <div class="food-card-image-container">
+            <img src="" alt="อาหาร" class="food-card-image" id="foodImage">
+            <div class="food-card-overlay"></div>
+          </div>
+          <div class="food-card-content">
+            <div class="food-card-header">
+              <h3 class="food-card-name" id="foodName">กำลังโหลด...</h3>
+              <div class="food-card-price" id="foodPrice">฿0</div>
+            </div>
+            <p class="food-card-description" id="foodDescription">กรุณากดปุ่มสุ่มอาหาร</p>
+            <div class="food-card-tags">
+              <span class="food-tag">
+                <i class="bi bi-star-fill"></i>
+                เมนูแนะนำ
+              </span>
+              <span class="food-tag">
+                <i class="bi bi-clock"></i>
+                ทำง่าย
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="random-button-container">
+          <button class="random-btn" id="randomBtn">
+            <i class="bi bi-shuffle"></i>
+            <span>สุ่มอาหาร</span>
+            <div class="random-btn-shine"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <p class="footer-text">© 2026 วันนี้กินอะไรดี? | ITF Lab Week 15</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
